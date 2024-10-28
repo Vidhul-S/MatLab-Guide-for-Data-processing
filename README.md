@@ -25,27 +25,35 @@ The industrial production index is a valuable measure of the output and activity
 
 ## Basic Statistics
 
-### 2.1 Mean Calculation
-
-The **mean** represents the average value of the dataset and is a simple measure of central tendency. Calculating the mean of the industrial production index helps identify the general level of production over a specified period.
-
-Example code for calculating the mean:
+### 2.1 Dataset importing
 ```matlab
-% Example: Calculating the mean production index for a specified entity
+data = readtable('industrial_production_index.csv');
+
+% Define the entity and time range for analysis (example: Germany, 2023) do this 
 entity = 'Germany';
 time_range = [datetime(2023, 1, 1), datetime(2023, 12, 31)];
 
 % Filter data for the selected entity and time range
 filtered_data = data(strcmp(data.GeopoliticalEntity, entity) & ...
                     data.Time >= time_range(1) & data.Time <= time_range(2), :);
-production_index = filtered_data.ProductionVolume;
 
+% Extract the production index values for calculations
+production_index = filtered_data.ProductionVolume;
+```
+
+### 2.2 Mean Calculation
+
+The **mean** represents the average value of the dataset and is a simple measure of central tendency. Calculating the mean of the industrial production index helps identify the general level of production over a specified period.
+
+Example code for calculating the mean:
+
+```matlab
 % Calculate mean production index
 mean_value = mean(production_index);
 disp(['Mean Production Index for ', entity, ': ', num2str(mean_value)]);
 ```
 
-### 2.2 Median Calculation
+### 2.3 Median Calculation
 
 The median is the middle value when the data is ordered from smallest to largest. Unlike the mean, the median is less affected by extreme values and can provide a better measure of central tendency for skewed data.
 
@@ -56,7 +64,7 @@ Example code for calculating the median:
 median_value = median(production_index);
 disp(['Median Production Index for ', entity, ': ', num2str(median_value)]);
 ```
-### 2.3 Mode Calculation
+### 2.4 Mode Calculation
 
 The mode is the value that appears most frequently in the dataset. It is useful for identifying the most common production index values during the selected period.
 

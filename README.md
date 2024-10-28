@@ -1,4 +1,4 @@
-# MATLAB Guide for Industrial Production Index Data Processing
+k# MATLAB Guide for Industrial Production Index Data Processing
 
 This guide provides a step-by-step approach to using MATLAB for analyzing and processing the industrial production index dataset. It covers essential statistical measures, data visualization, sampling, and cleaning techniques.
 
@@ -19,7 +19,7 @@ This guide provides a step-by-step approach to using MATLAB for analyzing and pr
 
 ## Introduction
 
-The industrial production index is a valuable measure of the output and activity within the industry sector. This guide focuses on using MATLAB to perform basic statistical calculations, visualize data, and implement sampling and cleaning methods on this dataset.
+Welcome to this hands-on MATLAB exercise, designed to help you learn essential data processing techniques using the **Industrial Production Index** dataset. This guide will walk you through calculating basic statistics, visualizing trends, and implementing sampling and data-cleaning methods. By working through these exercises, you’ll gain practical experience in MATLAB and develop a foundational understanding of data analysis concepts.
 
 ---
 
@@ -79,30 +79,35 @@ disp(['Mode Production Index for ', entity, ': ', num2str(mode_value)]);
 
 ## Data Visualization
 
-### 3.1 Line Plot of Production Index Over Time
+###Plot the following :
 
-### 3.2 Bar Chart Comparison Across Countries
-
-### 3.3 Scatter Plot for Monthly Variation
+- Q 3.1 Line Plot 
+- Q 3.2 Bar Chart
+   - Normal 
+   - Stacked
+- Q 3.3 Scatter Plot
+- Q 3.4 Histogram
+- Q 3.5 Box Plot
 
 ---
 
 ## Data Sampling
 
-### 4.1 Random Sampling
+### Do the following Sampling 
 
-### 4.2 Stratified Sampling by Region
-
-### 4.3 Sampling by Time Periods
+- 4.1 Random Sampling
+- 4.2 Stratified Sampling
+- 4.3 Clustered
+- 4.4 Systamatic
 
 ---
 
 ## Data Cleaning
 
-### 5.1 Handling Missing Values
+### Us the following steps to handle the data
 
-### 5.2 Removing Outliers
-
-### 5.3 Smoothing Time Series Data
+- 5.1 Handling Missing Values
+- 5.2 Removing Outliers
+- 5.3 Normalising Data
 
 ---

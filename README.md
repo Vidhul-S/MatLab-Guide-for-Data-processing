@@ -10,10 +10,6 @@ This guide provides a step-by-step approach to using MATLAB for analyzing and pr
    - 2.1 [Mean Calculation](#mean-calculation)
    - 2.2 [Median Calculation](#median-calculation)
    - 2.3 [Mode Calculation](#mode-calculation)
-3. [Data Visualization](#data-visualization)
-4. [Data Sampling](#data-sampling)
-5. [Data Cleaning](#data-cleaning)
-6. [Usage Instructions](#usage-instructions)
 
 ---
 
@@ -74,40 +70,3 @@ Example code for calculating the mode:
 mode_value = mode(production_index);
 disp(['Mode Production Index for ', entity, ': ', num2str(mode_value)]);
 ```
-
----
-
-## Data Visualization
-
-###Plot the following :
-
-- Q 3.1 Line Plot 
-- Q 3.2 Bar Chart
-   - Normal 
-   - Stacked
-- Q 3.3 Scatter Plot
-- Q 3.4 Histogram
-- Q 3.5 Box Plot
-
----
-
-## Data Sampling
-
-### Do the following Sampling 
-
-- 4.1 Random Sampling
-- 4.2 Stratified Sampling
-- 4.3 Clustered
-- 4.4 Systamatic
-
----
-
-## Data Cleaning
-
-### Us the following steps to handle the data
-
-- 5.1 Handling Missing Values
-- 5.2 Removing Outliers
-- 5.3 Normalising Data
-
----
